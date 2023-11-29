@@ -9,3 +9,4 @@ synth.v
 *.gtkw
 slpp_all/
 *_build/
+temp*
