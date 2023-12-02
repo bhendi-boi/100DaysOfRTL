@@ -7,7 +7,7 @@ module day10_tb ();
 
   logic[3:0]     count_o;
 
-  day10 DAY10 (.*);
+  temp DAY10 (.*);
 
   // Clock
   always begin
