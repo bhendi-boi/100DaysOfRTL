@@ -19,6 +19,6 @@ module day12 (
 
   assign nxt_shift = {shift_ff[10:0], x_i};
 
-  assign det_o = (shift_ff[11:0] == 12'b1110_1101_1011);
+  assign det_o = (shift_ff == 12'b1110_1101_1011);
 
 endmodule
