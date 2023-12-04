@@ -12,6 +12,7 @@ module day14 #(
 
   genvar i;
   for (i=1; i<NUM_PORTS; i=i+1) begin
+    // |gnt_o[i-1:0] checks whether all the ports which has more priority than ith port are not granted the bus
     assign gnt_o[i] = req_i[i] & ~(|gnt_o[i-1:0]);
   end
 
