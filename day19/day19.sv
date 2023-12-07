@@ -21,6 +21,7 @@ module day19 #(
                            ST_POP  = 2'b10,
                            ST_BOTH = 2'b11} fifo_state_t;
 
+  // $clog2 is ceil log2
   parameter PTR_W = $clog2(DEPTH);
 
   logic [PTR_W:0] nxt_rd_ptr;
